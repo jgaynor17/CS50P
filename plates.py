@@ -1,8 +1,3 @@
-#get input of 2 to 6 characters
-#while input contains any none alphanumeric or outside range, reprompt for input
-#if numbers in middle of plate, reprompt
-#if first number is a 0, reprompt #
-
 def main(): #main function
     plate = input("Plate: ") #ask for plate
     if is_valid(plate): #execute is_valid function
@@ -42,4 +37,9 @@ def number_in_middle(str): #define number_in_middle
                 if a.isalpha(): #if any character is alpha
                     return False #return false
 
-main()
+#def function
+#test if any 2 chars are digit then number
+#if so, return false
+
+if __name__ == "__main__":
+    main()
